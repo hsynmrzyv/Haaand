@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Made Sunflower";
+  src: url(fonts/made-sunflower.woff2) format("woff2"),
+    url(fonts//made-sunflower.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 33px;
+  background-image: url("images/Logo-BG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.logo__text {
+  font-family: "Made Sunflower";
+  font-size: 24px;
+}
+
+.logo__text--mobile {
+  display: block;
+}
+
+.logo__text--desktop {
+  display: none;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.hero__image {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 30px;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 540px) {
+  .logo {
+    height: 44px;
+    display: inline-block;
+  }
+
+  .logo__text {
+    font-size: 36px;
+  }
+
+  .logo__text--desktop {
+    display: block;
+  }
+
+  .logo__text--mobile {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 177px;
+  }
+
+  .hero__image {
+    width: 259px;
+    height: 259px;
+    margin-bottom: 46px;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 58px;
+  }
+}
